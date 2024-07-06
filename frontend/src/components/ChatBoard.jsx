@@ -157,7 +157,7 @@ function ChatBoard() {
                 {message.message.startsWith("/uploads/") && (
                   <img
                     id="sentimg"
-                    src={`http://localhost:5000${message.message}`}
+                    src={`https://quicktalk-b0rb.onrender.com/${message.message}`}
                     alt="Message Image"
                   />
                 )}
