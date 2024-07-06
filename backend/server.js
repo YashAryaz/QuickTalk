@@ -22,7 +22,7 @@ app.use("/api/users", userRoutes);
 app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
 // console.log(path.join(__dirname, '/uploads'));
 // Serve static files from the React frontend app
-// app.use(express.static(path.join(__dirname, "/frontend/dist")));
+app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
 // Anything that doesn't match the above, send back the index.html file
 // app.get("/", (req, res) => {
