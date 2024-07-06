@@ -25,13 +25,13 @@ app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
 // app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
 // Anything that doesn't match the above, send back the index.html file
-app.get("/", (req, res) => {
-  res.send("API is running....");
-});
-
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "/frontend/dist/index.html"));
+// app.get("/", (req, res) => {
+//   res.send("API is running....");
 // });
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/frontend/dist/index.html"));
+});
 
 server.listen(PORT, () => {
   connectToMongoDB();
