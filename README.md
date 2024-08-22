@@ -1,7 +1,7 @@
 # QuickTalk
 
 QuickTalk is a real-time chat and video call application designed to provide seamless communication. It leverages modern web development frameworks and libraries to offer an intuitive and responsive user experience.
-
+![Alt text](https://github.com/YashAryaz/QuickTalk/blob/main/QuickTalk-demo-img.png)
 
 ## [Hosted Here](https://quicktalk-b0rb.onrender.com/)
 
