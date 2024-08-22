@@ -1,0 +1,21 @@
+.Dashboard{
+    flex: 2;
+    background-color:  rgb(33, 35, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Profile-logo{
+    height: 100px;
+}
+.Big-text{
+    color:white;
+    font-size: 18px;;
+}
+.text-content{
+    color: rgb(96, 94, 94);
+    text-align: center;
+    margin:10px;
+    font-size: 10px;
+}

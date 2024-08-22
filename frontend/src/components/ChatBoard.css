@@ -1,0 +1,133 @@
+.ChatBoard{
+    font-family:Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.ChatBoard__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.ChatBoard__headerLeft{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#profile{
+    width: 32px;
+    margin:8px;
+}
+#phone-svg,#video-svg,#search-svg{
+    width: 18px;
+    margin:8px;
+}
+#search-svg{
+    transform: scaleX(-1);
+}
+.user-name{
+    color: white;
+}
+
+.ChatBoard__body {
+    flex: 1;
+    background-image: url('https://wallpapercave.com/wp/wp10254557.jpg');
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+    /* background-repeat: repeat-x; */
+    padding: 10px;
+    overflow-y: auto; /* Enable scrolling if content exceeds container */
+  }
+  
+  .message {
+    max-width: 100%;
+    min-width: 50px;
+    padding: 3px 8px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sent {
+    background-color: #07693a; /* Light green */
+    align-self: flex-end;
+    color: #e0e0e0;
+  }
+  
+  .received {
+    background-color: #3d3d3d; /* Light gray */
+    align-self: flex-start;
+    color: white;
+  }
+  .ChatBoard__footer {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+   
+    border-top: 1px solid black;
+  }
+  
+  .ChatBoard__footer input[type="text"] {
+    flex: 1;
+    margin-right: 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: #2c2b2b;
+  }
+  
+  #mic-svg {
+    width: 24px;
+    cursor: pointer;
+  }
+/* ChatBoard.css */
+
+.ChatBoard__body::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.ChatBoard__body::-webkit-scrollbar-track {
+  background: #201f1fc5 /* Color of the track */
+}
+
+.ChatBoard__body::-webkit-scrollbar-thumb {
+  background: #979a99;; /* Color of the scroll thumb */
+  border-radius: 5px;
+  height: 5px;
+
+}
+
+.ChatBoard__body::-webkit-scrollbar-thumb:hover {
+  background: #717171; /* Color of the scroll thumb on hover */
+  cursor: pointer;
+}
+
+
+.message-time {
+  font-size: 0.3em;
+  color: gray;
+  align-self: flex-end;
+}
+.user-status{
+  font-size: 0.5em;
+}
+#sentimg{
+  max-width: 250px;
+  max-height: 250px;
+}
+.img-preview{
+  background-color: #2c2b2b;
+  height: 110px;
+}
+.imgPreview{
+  padding: 5px;
+  width: 98px;
+  height: 98px;
+}

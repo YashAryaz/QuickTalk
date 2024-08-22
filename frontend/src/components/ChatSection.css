@@ -1,0 +1,104 @@
+.Chat-Section{
+flex:1;
+padding: 20px;
+min-width: 300px;
+
+border-right: 0.5px solid black;
+
+}
+.Chat-Section-Header{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+.text-class{
+    flex: 1;
+    color: aliceblue;
+}
+.Chat-Search{
+    display: flex;
+    align-items: center;
+   justify-content: flex-start;
+   margin: 10px;
+}
+input{
+    width:300px;
+    border:none;
+    height: 20px;
+    color:aliceblue;
+    border-radius: 0px 5px 5px 0px;
+    border-bottom: 3px solid green;
+    background-color: black;
+    outline: none;
+}
+.Chat-logo{
+
+    width:15px;
+    margin:5px
+}
+.search-logo{
+    width:15px;
+    padding: 3.8px;
+    border-bottom: 3px solid green;
+    margin-right: -0.1px;
+    border-radius: 0px 0px 5px 0px;
+    transform: scaleX(-1);
+}
+.Chat-Section-Body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    margin: 3px 0px;
+    padding: 8px;
+    border-radius: 8px 8px 8px 8px;
+}
+.Chat-Section-Body:hover{
+    background-color: rgb(57, 56, 56);
+
+}
+.Chat-Section-Body:active{
+    background-color: rgb(57, 56, 56);
+}
+.Contact{
+    display: flex;
+    justify-content: center;
+}
+.profile-logo{
+    width:40px;
+    margin-right: 10px;
+}
+.Contact-Info{
+    flex:1;
+}
+.Contact-Name{
+    color: white;
+    font-size: 12px;
+}
+.Contact-Message{
+    color: rgb(125, 125, 125);
+    font-size: 8px;
+}
+.Chat-Body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.selected{
+    background-color: rgb(57, 56, 56);
+}
+label{
+    margin: 5px;
+}
+label:hover{
+    cursor: pointer;
+}
+.icon-send{
+    margin-right: 2px;
+}
+.icon-send:hover{
+    cursor:pointer;
+}
